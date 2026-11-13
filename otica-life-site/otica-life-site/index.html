@@ -1,3 +1,30 @@
+Claude
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,7 +39,7 @@
 <meta name="author" content="Ótica Life">
 <link rel="canonical" href="https://www.oticalifebauru.com.br/">
 <link rel="alternate" hreflang="pt-BR" href="https://www.oticalifebauru.com.br/">
-<meta name="geo.region" content="BR-SP"><meta name="geo.placename" content="Bauru"><meta name="geo.position" content="-22.3228783;-49.0720352"><meta name="ICBM" content="-22.3147, -49.0608">
+<meta name="geo.region" content="BR-SP"><meta name="geo.placename" content="Bauru"><meta name="geo.position" content="-22.3228783;-49.0720352">
 <meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Ótica Life Bauru">
 <meta property="og:title" content="Óculos de Grau em Bauru | Ótica Life – Orçamento no WhatsApp"><meta property="og:description" content="Ótica em Bauru: óculos de grau e de sol, lentes multifocais Varilux e conserto de óculos. Duas lojas, nota 5,0 no Google. Orçamento pelo WhatsApp."><meta property="og:url" content="https://www.oticalifebauru.com.br/">
 <meta property="og:image" content="https://www.oticalifebauru.com.br/assets/img/og-otica-life-bauru.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Ótica Life Bauru — óculos de grau, lentes e conserto">
@@ -26,12 +53,25 @@ function gtag(){ dataLayer.push(arguments); }
 gtag('consent', 'default', { ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'denied', functionality_storage:'granted', security_storage:'granted', wait_for_update:500 });
 </script>
 <link rel="stylesheet" href="/assets/css/site.css">
+<link rel="preload" as="image" href="/assets/img/fachada-otica-life-bauru.webp" fetchpriority="high">
+<style>
+/* Capa em tela cheia no celular e tablet (até 1023px). No computador nada muda. CSS próprio, não depende do build do Tailwind. */
+@media (max-width:1023px){
+ section.hero-section{padding-top:0}
+ .hero-section>.hero-cover{order:-1;position:relative;margin-left:-1.25rem;margin-right:-1.25rem}
+ .hero-cover img.hero-img{display:block;width:100%;height:62vh;height:62svh;min-height:320px;max-height:560px;object-fit:cover;object-position:50% 50%;border:0;border-radius:0;box-shadow:none}
+ .hero-cover::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40%;pointer-events:none;background:linear-gradient(to top,#12225e 0%,rgba(18,34,94,.7) 45%,rgba(18,34,94,0) 100%)}
+ .hero-section>.hero-text{position:relative;z-index:1;display:flex;flex-direction:column;margin-top:-7rem}
+ .hero-text h1{text-shadow:0 2px 14px rgba(10,20,64,.65)}
+ .hero-text>p.hero-lead{order:1;margin-top:1.25rem}
+}
+</style>
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="ICBM" content="-22.3228783, -49.0720352">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--radius:1rem;--background:#f7faff;--foreground:#0b1b3d;--card:#ffffff;--primary:#12225e;--primary-foreground:#ffffff;--secondary:#e9f3fd;--muted:#eef4fb;--muted-foreground:#4b5b7a;--accent:#38b6f0;--whatsapp:oklch(0.68 0.17 150);--whatsapp-foreground:oklch(0.99 0 0);--border:#d8e4f2;--ring:#12225e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
@@ -39,9 +79,6 @@ html{scroll-padding-top:env(safe-area-inset-top,0px)}
 .hero-navy{background-image:radial-gradient(44rem 26rem at 6% 70%,rgba(56,182,240,.20),transparent 65%),radial-gradient(40rem 26rem at 100% 40%,rgba(2,65,164,.38),transparent 65%)}
 .light-scope{--foreground:#0b1b3d;--muted-foreground:#4b5b7a;--primary:#12225e;--border:#d8e4f2;color:var(--foreground)}
 body{background-color:var(--background);color:var(--foreground);background-repeat:no-repeat;background-image:radial-gradient(62rem 38rem at 6% -4%,rgba(54,182,255,.17),transparent 62%),radial-gradient(48rem 32rem at 100% 24%,rgba(0,28,95,.07),transparent 62%),radial-gradient(54rem 34rem at 0% 64%,rgba(54,182,255,.11),transparent 62%),radial-gradient(46rem 30rem at 100% 90%,rgba(0,28,95,.06),transparent 62%)}
-body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none}
-body::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 .11 0 0 0 0 .37 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:160px 160px;opacity:.09}
-body::after{background:radial-gradient(ellipse 120% 90% at 50% 38%,transparent 58%,rgba(0,28,95,.11) 100%)}
 #vFilter{scrollbar-width:none}#vFilter::-webkit-scrollbar{display:none}
 details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-marker{display:none}
 details[open] .chev{transform:rotate(180deg)}
@@ -108,13 +145,13 @@ details[open]>*:not(summary){animation:fxOpen .35s ease backwards}
   <img src="/assets/img/logo-otica-life-bauru.webp" alt="Logo da Ótica Life Bauru — Vida para seus olhos" title="Ótica Life Bauru" width="900" height="286" class="h-9 w-auto shrink-0 sm:h-12">
   <a id="hdrProof" target="_blank" rel="noopener noreferrer" class="flex shrink-0 items-center gap-1 text-sm text-muted-foreground underline-offset-4 hover:underline"><svg class="h-4 w-4 fill-accent text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 1-5 5 1.2 7L12 18l-6.2 3.5L7 14.5l-5-5 7-1z"/></svg> 5,0 no Google</a>
 </header></div>
-
+ 
 <main>
-<div class="on-navy hero-navy border-b-4 border-accent"><section class="mx-auto grid max-w-6xl gap-6 px-5 pb-16 pt-2 sm:gap-8 sm:pt-6 lg:grid-cols-12 lg:items-center lg:gap-10">
-  <div class="order-1 lg:col-span-5">
+<div class="on-navy hero-navy border-b-4 border-accent"><section class="hero-section mx-auto grid max-w-6xl gap-6 px-5 pb-16 pt-2 sm:gap-8 sm:pt-6 lg:grid-cols-12 lg:items-center lg:gap-10">
+  <div class="hero-text order-1 lg:col-span-5">
     <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-primary sm:mb-3">Bauru · SP</p>
     <h1 class="font-display text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">Óculos de grau em Bauru: <span class="text-primary">orçamento pela foto da receita</span></h1>
-    <p class="mt-3 text-base text-muted-foreground sm:mt-4 sm:text-lg">Mande a foto da receita e receba seu orçamento sem sair de casa. Ótica em Bauru com certificado Varilux, óculos de grau e de sol e conserto de óculos. Escolha o assunto e fale direto com a nossa equipe pelo WhatsApp.</p>
+    <p class="hero-lead mt-3 text-base text-muted-foreground sm:mt-4 sm:text-lg">Mande a foto da receita e receba seu orçamento sem sair de casa. Ótica em Bauru com certificado Varilux, óculos de grau e de sol e conserto de óculos. Escolha o assunto e fale direto com a nossa equipe pelo WhatsApp.</p>
       <div id="heroExtra">
         <a id="heroCta" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-whatsapp px-6 py-4 font-bold text-whatsapp-foreground sm:w-auto"><span data-i="msg"></span> <span id="heroCtaLabel">Pedir orçamento no WhatsApp</span></a>
         <div class="mt-4 flex items-start gap-3 rounded-lg border border-[#2f4698] bg-[#1a2d6e] px-4 py-3">
@@ -122,12 +159,12 @@ details[open]>*:not(summary){animation:fxOpen .35s ease backwards}
           <p class="text-sm leading-snug"><span class="block font-bold text-white">Certificado Varilux</span><span class="text-muted-foreground">Lentes multifocais originais, com certificado de autenticidade emitido pela Essilor.</span></p>
         </div>
         <a id="heroProof" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block text-sm font-semibold underline underline-offset-4">★ 5,0 no Google · 78 avaliações</a>
-        <p id="openNow" class="mt-2 text-sm text-muted-foreground"></p>
+        <p id="openNow" class="mt-2 text-sm text-muted-foreground" style="min-height:1.25rem"></p>
         <p class="mt-1 text-sm text-muted-foreground">No horário de atendimento, respondemos em cerca de 5 minutos.</p>
         <p class="mt-4 border-l-4 border-accent pl-3 text-sm text-muted-foreground">Cliente no Google: saiu com os óculos em menos de 40 minutos.</p>
       </div>
   </div>
-
+ 
   <div class="order-3 lg:col-span-4" id="formBox">
     <div class="light-scope rounded-3xl border bg-card p-5 shadow-xl sm:p-6">
       <h2 class="font-display text-xl font-bold">Fale com a gente</h2>
@@ -142,12 +179,12 @@ details[open]>*:not(summary){animation:fxOpen .35s ease backwards}
       <a id="proofMain" target="_blank" rel="noopener noreferrer" class="mt-1 block text-center text-xs font-semibold underline underline-offset-4">★ 5,0 no Google · 78 avaliações</a>
     </div>
   </div>
-
-  <div class="order-2 lg:col-span-3">
-    <img src="/assets/img/armacao-oculos-de-grau-otica-life-bauru.webp" alt="Armação de óculos de grau em destaque, modelo da Ótica Life em Bauru" title="Óculos de grau em Bauru — Ótica Life" width="700" height="886" fetchpriority="high" decoding="async" class="h-32 w-full rounded-2xl border object-cover object-[50%_45%] shadow-lg sm:h-40 lg:h-[520px]">
+ 
+  <div class="hero-cover order-2 lg:col-span-3">
+    <img src="/assets/img/fachada-otica-life-bauru.webp" alt="Fachada da Ótica Life Jardim América em Bauru, com letreiro iluminado e vitrine de óculos" title="Ótica Life Bauru — fachada da loja" width="841" height="1024" fetchpriority="high" decoding="async" class="hero-img h-32 w-full rounded-2xl border object-cover object-[50%_45%] shadow-lg sm:h-40 lg:h-[520px]">
   </div>
 </section></div>
-
+ 
 <section class="mx-auto max-w-6xl px-5 pb-14 pt-14 sm:pb-16 sm:pt-16" id="vitrine">
   <p class="text-sm font-semibold uppercase tracking-widest text-primary">Nossa seleção</p>
   <h2 class="mt-2 font-display text-2xl font-bold leading-tight sm:text-3xl">Modelos em destaque: óculos de grau e de sol em Bauru</h2>
@@ -166,7 +203,7 @@ details[open]>*:not(summary){animation:fxOpen .35s ease backwards}
     <a id="vitrineCta" target="_blank" rel="noopener noreferrer" class="inline-flex w-fit shrink-0 items-center gap-2 rounded-xl bg-whatsapp px-5 py-3 text-sm font-bold text-whatsapp-foreground transition hover:opacity-90"><span data-i="msg" data-s="16"></span> Ver mais modelos</a>
   </div>
 </section>
-
+ 
 <section class="mx-auto max-w-6xl px-5 pb-14 sm:pb-16">
   <div id="cardBox" class="grid overflow-hidden rounded-2xl border bg-card shadow-md lg:grid-cols-[1.05fr_0.95fr]">
     <figure class="relative order-1">
@@ -181,7 +218,7 @@ details[open]>*:not(summary){animation:fxOpen .35s ease backwards}
     </div>
   </div>
 </section>
-
+ 
 <section class="mx-auto max-w-6xl px-5 pb-16">
   <h2 class="font-display text-3xl font-bold">O que os clientes da Ótica Life em Bauru dizem</h2>
   <div class="mt-6 grid items-start gap-4 md:grid-cols-3">
@@ -203,7 +240,7 @@ details[open]>*:not(summary){animation:fxOpen .35s ease backwards}
   </div>
   <a id="revAll" target="_blank" rel="noopener noreferrer" class="mt-5 inline-block text-sm font-bold text-primary underline underline-offset-4">Ver todas as avaliações no Google</a>
 </section>
-
+ 
 <section class="bg-secondary py-16">
   <div class="mx-auto max-w-3xl px-5">
     <h2 class="font-display text-3xl font-bold">Dúvidas frequentes</h2>
@@ -212,13 +249,13 @@ details[open]>*:not(summary){animation:fxOpen .35s ease backwards}
     <a id="faqEnd" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-whatsapp px-5 py-3 text-sm font-bold text-whatsapp-foreground transition hover:opacity-90"><span data-i="msg" data-s="16"></span> Tirar minha dúvida no WhatsApp</a>
   </div>
 </section>
-
+ 
 <section class="mx-auto max-w-5xl px-5 py-16">
   <h2 class="font-display text-3xl font-bold">Duas óticas em Bauru: Centro e Jardim América</h2>
   <div id="stores" class="mt-6 grid gap-4 md:grid-cols-2"><address class="rounded-2xl border bg-card p-6 not-italic"><h3 class="font-display text-xl font-bold">Ótica Life Centro</h3><p>R. Rio Branco, 8-28 · Centro, Bauru - SP</p><p>WhatsApp: (14) 98832-7621</p><p>Seg a sex 9h às 18h · Sáb 9h às 14h30 · Dom fechado</p></address><address class="rounded-2xl border bg-card p-6 not-italic"><h3 class="font-display text-xl font-bold">Ótica Life Jardim América</h3><p>Av. Nossa Sra. de Fátima, 9-85 · Jd. América, Bauru - SP</p><p>WhatsApp: (14) 98820-3639</p><p>Seg a sex 9h às 18h · Sáb 9h às 13h · Dom fechado</p></address></div>
 </section>
 </main>
-
+ 
 <footer class="border-t-4 border-accent bg-primary py-10 text-center">
   <img src="/assets/img/logo-otica-life-bauru.webp" alt="Logo da Ótica Life Bauru — Vida para seus olhos" width="900" height="286" loading="lazy" class="mx-auto h-10 w-auto">
   <p class="mt-3 text-sm text-[#b8c7e6]">© Ótica Life · Bauru, SP</p>
@@ -226,7 +263,7 @@ details[open]>*:not(summary){animation:fxOpen .35s ease backwards}
   <p class="mt-3 text-xs text-[#8fa3cc]">Ótica Life · CNPJ 33.731.623/0001-93</p>
   <p class="mt-2 text-xs text-[#b8c7e6]"><a href="/privacidade" class="underline underline-offset-4 hover:text-white">Política de privacidade</a> · <button type="button" data-ck="prefs" class="underline underline-offset-4 hover:text-white">Preferências de cookies</button></p>
 </footer>
-
+ 
 <div id="ckBar" hidden role="region" aria-label="Aviso de cookies" class="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-3xl rounded-xl border bg-card p-4 text-sm shadow-2xl sm:inset-x-5 sm:bottom-5 sm:p-5">
   <p class="text-foreground"><span class="font-bold">Cookies:</span> usamos cookies essenciais para o site funcionar. Com a sua permissão, também usamos cookies de análise e de anúncios para medir visitas e melhorar nossas campanhas. Você pode mudar sua escolha quando quiser no rodapé. <a href="/privacidade" class="font-semibold text-primary underline underline-offset-4">Política de privacidade</a></p>
   <div class="mt-3 grid grid-cols-3 gap-2">
@@ -256,7 +293,7 @@ details[open]>*:not(summary){animation:fxOpen .35s ease backwards}
 </div>
 <a id="fab" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="fixed bottom-5 right-5 flex items-center gap-2 rounded-lg bg-whatsapp py-4 pl-4 pr-5 text-sm font-bold text-whatsapp-foreground shadow-xl transition-opacity duration-300 md:hidden pointer-events-none opacity-0" aria-hidden="true" tabindex="-1"><span data-i="msg" data-s="22"></span> WhatsApp</a>
 </div>
-
+ 
 <script>
 const P = {
   msg:'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>',
@@ -335,7 +372,7 @@ function statusHtml(id){
 let store = stores[0].id, topic = topics[2].l;
 const $ = id => document.getElementById(id);
 document.querySelectorAll('[data-i]').forEach(el => el.innerHTML = icon(el.dataset.i, +el.dataset.s || 20));
-
+ 
 function renderVitrine(cur) {
   $('vFilter').innerHTML = vFilters.map(x => {
     const n = x.k === 'todos' ? vitrine.length : vitrine.filter(v => v.f === x.k).length;
@@ -344,7 +381,7 @@ function renderVitrine(cur) {
   const list = vf === 'todos' ? vitrine : vitrine.filter(v => v.f === vf);
   $('vitrineList').innerHTML = list.map(v => `<article class="flex w-[72%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border bg-card shadow-sm sm:w-[44%] lg:w-[calc(25%-12px)]"><div class="relative aspect-[4/3] overflow-hidden bg-secondary"><img src="/assets/img/vitrine/${v.img}-600.webp" srcset="/assets/img/vitrine/${v.img}-600.webp 600w, /assets/img/vitrine/${v.img}-1200.webp 1200w" sizes="(min-width:1024px) 270px, (min-width:640px) 44vw, 72vw" alt="${v.f==='sol'?'Óculos de sol':v.f==='infantil'?'Óculos infantil':'Armação de grau'} ${v.b}: ${v.n}" width="1200" height="900" loading="lazy" decoding="async" class="h-full w-full object-cover"><span class="absolute left-3 top-3 rounded-md border bg-card px-3 py-1 text-xs font-semibold shadow-sm">${v.c}</span></div><div class="flex flex-1 flex-col gap-1 p-4"><p class="text-xs font-semibold uppercase tracking-widest text-primary">${v.b}</p><h3 class="font-display text-lg font-bold leading-snug">${v.n}</h3><p class="flex-1 text-sm text-muted-foreground">${v.d}</p><a href="${wa(cur.phone, `Olá! Vim pelo site e tenho interesse no modelo ${v.n} da ${v.b} (${v.c}). Ainda tem disponível?`)}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-2.5 text-sm font-bold text-whatsapp-foreground transition hover:opacity-90">Quero ver esse modelo</a></div></article>`).join('');
 }
-
+ 
 function render() {
   const cur = stores.find(s => s.id === store);
   const nome = $('nome').value.trim();
@@ -373,7 +410,7 @@ function render() {
 $('topics').addEventListener('click', e => { const b = e.target.closest('[data-t]'); if (b) { topic = b.dataset.t; render(); } });
 $('storeBtns').addEventListener('click', e => { const b = e.target.closest('[data-s]'); if (b) { store = b.dataset.s; render(); } });
 $('nome').addEventListener('input', render);
-
+ 
 const vList = $('vitrineList'), vPrev = $('vPrev'), vNext = $('vNext');
 const updArrows = () => {
   vPrev.disabled = vList.scrollLeft <= 4;
@@ -396,15 +433,15 @@ $('vFilter').addEventListener('click', e => {
   vList.scrollTo({ left: 0 });
   setTimeout(updArrows, 0);
 });
-
+ 
 const ctaText = {'Armações de grau':'Ver armações no WhatsApp','Óculos de sol':'Ver óculos de sol no WhatsApp','Lentes / orçamento':'Pedir orçamento no WhatsApp','Conserto de óculos':'Falar do conserto no WhatsApp'};
 const faqCta = [["Enviar minha receita", "Olá! Vim pelo site e quero pedir um orçamento com a minha receita."], ["Pedir orçamento de lentes", "Olá! Vim pelo site e quero um orçamento de lentes multifocais."], ["Pedir lentes Varilux", "Olá! Vim pelo site e quero saber sobre lentes multifocais Varilux."], ["Perguntar sobre meu conserto", "Olá! Vim pelo site e quero saber sobre o conserto dos meus óculos."], ["Tirar dúvida sobre lentes de contato", "Olá! Vim pelo site e quero saber sobre lentes de contato."], ["Pedir fotos de modelos", "Olá! Vim pelo site e quero ver fotos de armações e óculos de sol."], ["Combinar minha visita", "Olá! Vim pelo site e quero visitar a loja."], ["Falar com a equipe", "Olá! Vim pelo site e tenho uma dúvida."]];
 $('faq').innerHTML = faqs.map(([q,a],i) => `<details class="border-b"><summary class="flex items-center justify-between gap-4 py-4 text-left text-base font-semibold">${q}<svg class="chev h-4 w-4 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><p class="pb-3 text-muted-foreground">${a}</p><a data-f="${i}" target="_blank" rel="noopener noreferrer" class="mb-4 inline-flex text-sm font-bold text-primary underline underline-offset-4">${faqCta[i][0]}</a></details>`).join('');
 // comportamento "single": abrir um fecha os outros
 $('faq').addEventListener('toggle', e => { if (e.target.open) document.querySelectorAll('#faq details').forEach(d => { if (d !== e.target) d.open = false; }); }, true);
-
+ 
 $('stores').innerHTML = stores.map(s => `<div class="rounded-2xl border bg-card p-6"><h3 class="font-display text-xl font-bold">Ótica Life ${s.name}</h3><p class="mt-2 flex items-center gap-2 text-sm text-muted-foreground">${icon('pin',16)} ${s.address}</p><p class="mt-2 text-sm text-muted-foreground"><span class="font-semibold text-foreground">Seg a sex:</span> 9h às 18h · <span class="font-semibold text-foreground">Sáb:</span> ${HR[s.id].satTxt} · <span class="font-semibold text-foreground">Dom:</span> fechado</p><p class="mt-1 text-sm text-muted-foreground">${statusHtml(s.id)}</p><a href="${s.rev}" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground">★ 5,0 no Google · ${s.reviews} avaliações</a><div class="mt-4 flex flex-wrap gap-2"><a href="${wa(s.phone,'Olá! Vim pelo site e quero atendimento.')}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-whatsapp px-4 py-2 text-sm font-semibold text-whatsapp-foreground">WhatsApp · ${s.display}</a><a href="${s.maps}" target="_blank" rel="noopener noreferrer" class="rounded-lg border px-4 py-2 text-sm font-semibold hover:bg-muted" aria-label="Como chegar à Ótica Life ${s.name}, Bauru">Como chegar</a></div></div>`).join('');
-
+ 
 // botão flutuante: aparece quando formulário e cartão da loja saem da tela
 const fab = $('fab'), vis = new Set();
 if ('IntersectionObserver' in window) {
@@ -439,7 +476,7 @@ render();
     el.classList.add('fx-hide');
     watch(el, function(){ el.classList.remove('fx-hide'); el.classList.add('fx-rise'); if (cb) cb(); });
   }
-
+ 
   // 1) Entrada do topo: uma sequência única
   var hero = q('main section'), h1 = hero && q('h1', hero);
   if (h1) {
@@ -452,8 +489,8 @@ render();
     if (u) u.classList.add('fx-ul');
     var img = q('.order-2 img', hero);
     if (img) {
-      img.classList.add('fx-clip');
       if (matchMedia('(min-width:1024px)').matches) {
+        img.classList.add('fx-clip');
         var tick = false;
         addEventListener('scroll', function(){
           if (tick) return; tick = true;
@@ -465,7 +502,7 @@ render();
       }
     }
   }
-
+ 
   // 2) Vitrine: cards e marcas entram em sequência; o carrossel dá uma dica de rolagem
   function nudge(){
     var l = q('#vitrineList');
@@ -486,7 +523,7 @@ render();
       if (sel === '#vitrineList') setTimeout(nudge, 1000);
     });
   });
-
+ 
   // 3) Loja: foto revelada de cima para baixo, texto em sequência
   var fig = q('#cardBox figure'), sImg = fig && q('img', fig);
   if (sImg) {
@@ -494,7 +531,7 @@ render();
     watch(fig, function(){ sImg.classList.remove('fx-cliphide'); sImg.classList.add('fx-clip2'); });
   }
   qa('#cardBox>div>*').forEach(function(el, i){ rise(el, i * 110); });
-
+ 
   // 4) Avaliações: cards em sequência e estrelas "acendendo" da esquerda para a direita
   qa('main figure').filter(function(f){ return !f.closest('#cardBox'); }).forEach(function(f, i){
     var st = q('[role=img]', f);
@@ -503,7 +540,7 @@ render();
       if (st) { st.classList.remove('fx-starhide'); st.classList.add('fx-star'); }
     });
   });
-
+ 
   // 5) Perguntas frequentes
   qa('details').forEach(function(d, i){ rise(d, i * 60); });
 })();
@@ -511,3 +548,5 @@ render();
 <script src="/assets/js/consentimento.js"></script>
 </body>
 </html>
+ 
+Claude terminou a resposta
