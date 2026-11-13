@@ -1,0 +1,14 @@
+{
+  "name": "Ótica Life Bauru",
+  "short_name": "Ótica Life",
+  "description": "Óculos de grau e de sol, lentes Varilux e consertos em Bauru-SP.",
+  "start_url": "/",
+  "display": "browser",
+  "lang": "pt-BR",
+  "theme_color": "#001c5f",
+  "background_color": "#001c5f",
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
