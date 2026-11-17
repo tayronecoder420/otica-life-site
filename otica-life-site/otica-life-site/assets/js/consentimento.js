@@ -3,7 +3,7 @@
    - A escolha fica salva neste navegador (data, hora e versão do aviso) e pode ser mudada pelo rodapé.
    - Para ativar a medição, preencha os IDs abaixo. Enquanto estiverem vazios, nenhuma ferramenta é carregada. */
 (function(){
-  var CK = { versao: '2026-11-12', ga4: '' /* ex.: 'G-XXXXXXXXXX' */, googleAds: '' /* ex.: 'AW-XXXXXXXXX' */, metaPixel: '' /* ex.: '123456789012345' */, googleAdsConversao: '' /* rótulo da conversão do Google Ads, ex.: 'AbCdEfGh123' */ };
+  var CK = { versao: '2026-11-12', ga4: 'G-15WSHMGRRZ', googleAds: 'AW-18490202239', metaPixel: '' /* ex.: '123456789012345' */, googleAdsConversao: 'BfB2CN_nr7odEP-w6PBE' };
   var KEY = 'oticalife_cookies';
   var bar = document.getElementById('ckBar'), dlg = document.getElementById('ckDlg');
   var ana = document.getElementById('ckAna'), ads = document.getElementById('ckAds'), fab = document.getElementById('fab');
